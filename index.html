@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>NBA Fantasy</title>
+</head>
+<header>NBA FANTASY 2014-2024</header>
+<body>
+    <h1>My Fantasy Team</h1>
+    <div class="boxContainer">
+        <div id="playerBox1" class="Box">
+            <h2>Point Guard</h2>
+            <p id="playerNameP1"></p>
+            <p id="threePercentP1"></p>
+            <p id="pointsP1"></p>
+        </div>
+
+        <div id="playerBox2" class="Box">
+            <h2>Shooting Guard</h2>
+            <p id="playerNameP2"></p>
+            <p id="threePercentP2"></p>
+            <p id="pointsP2"></p>
+        </div>
+
+        <div id="playerBox3" class="Box">
+            <h2>Small Forward</h2>
+            <p id="playerNameP3"></p>
+            <p id="threePercentP3"></p>
+            <p id="pointsP3"></p>
+        </div>
+
+        <div id="playerBox4" class="Box">
+            <h2>Power Forward</h2>
+            <p id="playerNameP4"></p>
+            <p id="threePercentP4"></p>
+            <p id="pointsP4"></p>
+        </div>
+
+        <div id="playerBox5" class="Box">
+            <h2>Center</h2>
+            <p id="playerNameP5"></p>
+            <p id="threePercentP5"></p>
+            <p id="pointsP5"></p>
+        </div>
+    </div>
+
+    <h1>NBA Player Search</h1>
+    <div class="SearchContainerA">
+        <div class="SearchContainer">
+            <select id="positionSelecter">
+                <option value="PG">PG</option>
+                <option value="SG">SG</option>
+                <option value="SF">SF</option>
+                <option value="PF">PF</option>
+                <option value="C">C</option>
+            </select>
+            <label for="points">Points: <span id="pointsValue">0</span></label>
+            <input type="range" id="pointsRange" name="points" min="0" max="20000">
+
+            <label for="FG">FG%: <span id="FGValue">0</span></label>
+            <input type="range" id="FGRange" name="FG" min="0" max="100">
+
+            <label for="threeP">3P%: <span id="threePValue">0</span></label>
+            <input type="range" id="threePRange" name="3P" min="0" max="100">
+
+            <button id="searchBTN">Search Player</button>
+        </div>
+    </div>
+
+    <div class="tableContainer">
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Player</th>
+                    <th>Position</th>
+                    <th>FG%</th>
+                    <th>3P%</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+    </div>
+</body>
+</html>
